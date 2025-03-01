@@ -34,7 +34,7 @@ document
     let createHistory = document.createElement('div');
     createHistory.innerHTML = `
     <div class=" mt-4 bg-[#F4F7FF] m-8  p-2 rounded-md">
-          <h4 class="text-start">You have Complete The Task Add  ${mobileTitle} at ${formeTedTime} </h4>
+          <h4 class="text-start">You have Complete The Task   ${mobileTitle} at ${formeTedTime} </h4>
         </div>
     `;
     let historyContainer = document.getElementById('history-container');
@@ -87,7 +87,7 @@ document.getElementById('swift-button').addEventListener('click', function () {
   let createHistory = document.createElement('div');
   createHistory.innerHTML = `
     <div class=" mt-4 bg-[#F4F7FF] m-8  p-2 rounded-md">
-          <h4 class="text-start">You have Complete The Task Add  ${mobileTitle} at ${formeTedTime} </h4>
+          <h4 class="text-start">You have Complete The Task  ${mobileTitle} at ${formeTedTime} </h4>
         </div>
     `;
   let historyContainer = document.getElementById('history-container');
@@ -114,7 +114,7 @@ document.getElementById('meta-button').addEventListener('click', function () {
   let createHistory = document.createElement('div');
   createHistory.innerHTML = `
     <div class=" mt-4 bg-[#F4F7FF] m-8  p-2 rounded-md">
-          <h4 class="text-start">You have Complete The Task Add  ${mobileTitle} at ${formeTedTime} </h4>
+          <h4 class="text-start">You have Complete The Task   ${mobileTitle} at ${formeTedTime} </h4>
         </div>
     `;
   let historyContainer = document.getElementById('history-container');
@@ -141,7 +141,7 @@ document.getElementById('google-button').addEventListener('click', function () {
   let createHistory = document.createElement('div');
   createHistory.innerHTML = `
     <div class=" mt-4 bg-[#F4F7FF] m-8  p-2 rounded-md">
-          <h4 class="text-start">You have Complete The Task Add  ${mobileTitle} at ${formeTedTime} </h4>
+          <h4 class="text-start">You have Complete The Task ${mobileTitle} at ${formeTedTime} </h4>
         </div>
     `;
   let historyContainer = document.getElementById('history-container');
@@ -168,7 +168,7 @@ document.getElementById('glass-button').addEventListener('click', function () {
   let createHistory = document.createElement('div');
   createHistory.innerHTML = `
     <div class=" mt-4 bg-[#F4F7FF] m-8  p-2 rounded-md">
-          <h4 class="text-start">You have Complete The Task Add  ${mobileTitle} at ${formeTedTime} </h4>
+          <h4 class="text-start">You have Complete The Task ${mobileTitle} at ${formeTedTime} </h4>
         </div>
     `;
   let historyContainer = document.getElementById('history-container');
@@ -196,6 +196,9 @@ for (let button of buttons) {
     this.disabled = true;
     taskRemaining--;
     alert('Board Updated Successfully');
+    if (taskRemaining === 0) {
+      alert('Congratulation! you have completed all tha current task');
+    }
   });
 }
 
