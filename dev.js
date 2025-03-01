@@ -192,11 +192,10 @@ console.log(buttons);
 let taskRemaining = buttons.length;
 for (let button of buttons) {
   button.addEventListener('click', function () {
+    button.ariaDisabled = true;
     this.disabled = true;
     taskRemaining--;
-    if (taskRemaining === 0) {
-      alert('All task completed');
-    }
+    alert('Board Updated Successfully');
   });
 }
 
